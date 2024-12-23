@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kelana_mimpi/screens/berandaScreen.dart';
 import 'package:kelana_mimpi/screens/kulinerScreen.dart';
 import 'package:kelana_mimpi/screens/petaScreen.dart';
 import 'package:kelana_mimpi/screens/wisataScreen.dart';
@@ -31,7 +32,7 @@ class _NavBarState extends State<NavBar> {
     }
     switch (_selectedNavbar) {
       case 0:
-        return Center(child: Text('Wisata Page'));
+        return Berandascreen();
       case 1:
         return PetaScreen(onDetailPetaPressed: _showDetailPeta);
       case 2:

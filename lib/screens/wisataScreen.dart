@@ -124,7 +124,8 @@ class _WisatacreenState extends State<Wisatascreen> {
       SizedBox(
         height: 20,
       ),
-      Expanded(
+      SingleChildScrollView(
+        scrollDirection: Axis.vertical,
         child: widgetOptions[selectedWidgetIndex],
       ),
     ]);
